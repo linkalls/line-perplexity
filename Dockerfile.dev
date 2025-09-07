@@ -1,0 +1,18 @@
+FROM oven/bun:latest
+
+WORKDIR /app
+
+# Install deps
+COPY package.json bun.lock /app/
+RUN bun install
+
+# Copy rest of files
+COPY . /app/
+
+EXPOSE 3000
+
+# Use bun user
+USER bun
+
+# Start dev server with hot reload
+CMD ["bun", "run", "dev"]
