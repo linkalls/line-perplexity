@@ -1,0 +1,15 @@
+{
+  "name": "line-perplexity",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts"
+  },
+  "dependencies": {
+    "@line/bot-sdk": "^10.2.0",
+    "@potetotown/perplexity": "^0.1.1",
+    "hono": "^4.9.6",
+    "markdown-flex-message": "^0.3.5"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
