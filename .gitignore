@@ -1,2 +1,4 @@
 # deps
 node_modules/
+perplexity_response.json
+.env
